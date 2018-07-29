@@ -1,0 +1,4 @@
+GMConsole = {
+    token: "",
+    groups: [],
+};
