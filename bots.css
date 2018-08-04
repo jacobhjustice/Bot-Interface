@@ -36,6 +36,10 @@ body {
     text-decoration: underline;
 }
 
+#content {
+    width: 100%;
+}
+
 .userInput {
     min-width: 250px;
     margin: 0 auto;
@@ -53,4 +57,14 @@ body {
     color: #e6e6e6 !important;
     cursor: pointer;
     display: block !important;
+    margin-top: 15px;
+}
+
+.groupLabel{
+    display: block;
+    width: 100%;
+    text-align: left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }

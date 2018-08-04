@@ -15,9 +15,11 @@
         
         <div class = "headerGroup">
             <div class = "headerText">Welcome to the Groupme Console</div>
-            <div class = "detailText">This is an independent app that allows you to run specific scripts from your GroupMe Account. To use the console, you will need to login to <a href = "https://dev.groupme.com/">the GroupMe developer website</a> and obtain your access token via the button in the top left of the screen. Please paste this token into the box below:</div>
-            <input type = "text" class = "userInput" name = "groupmeLogin" placeholder="Token" id = "groupmeLogin" />
-            <div class = "btn" id = "loginButton" onclick = "login()">Login</div>
+            <div class = "detailText" id = "instruction">This is an independent app that allows you to run specific scripts from your GroupMe Account. To use the console, you will need to login to <a href = "https://dev.groupme.com/">the GroupMe developer website</a> and obtain your access token via the button in the top left of the screen. Please paste this token into the box below:</div>
+            <div id = "content">
+                <input type = "text" class = "userInput" name = "groupmeLogin" placeholder="Token" id = "groupmeLogin" />
+                <div class = "btn" id = "loginButton" onclick = "login()">Login</div>
+            </div>
         </div>
         
     </div>
