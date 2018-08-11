@@ -12,7 +12,6 @@
     <script src = "appHandlers.js"></script>
 
     <div id = "contentWrapper">
-        
         <div class = "headerGroup">
             <div class = "headerText">Welcome to the Groupme Console</div>
             <div class = "detailText" id = "instruction">This is an independent app that allows you to run specific scripts from your GroupMe Account. To use the console, you will need to login to <a href = "https://dev.groupme.com/">the GroupMe developer website</a> and obtain your access token via the button in the top left of the screen. Please paste this token into the box below:</div>
@@ -23,4 +22,27 @@
         </div>
         
     </div>
+
+    <script id = "scriptSelector">
+        <div class = "headerGroup">
+            <div class = "headerText">Groupme Console</div>
+            <div class = "detailText">Select a script to run on <div id ="groupName"></div></div>
+            <div class = "scriptOption red" onclick = "randomize()">
+                <div class = "headerText">Randomizer</div>
+                <div class = "detailText">Mix things up by swapping everyone's name in your group (will kick and readd everyone back)!</div>
+            </div>
+            <div class = "scriptOption blue">
+                <div class = "headerText">Adder</div>
+                <div class = "detailText">Add 100 random users to your group!</div>
+            </div>
+            <div class = "scriptOption red">
+                <div class = "headerText">Group History</div>
+                <div class = "detailText">View all messages spoken in a group!</div>
+            </div>
+            <div class = "scriptOption blue">
+                <div class = "headerText">Reset Muted</div>
+                <div class = "detailText">Kick and readd everyone with the group muted (resulting in it unmuted)!</div>
+            </div>
+        </div>
+    </script>
 </body>

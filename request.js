@@ -1,4 +1,4 @@
-function httpRequest(url, isPost, callback) {
+function httpRequest(url, isPost, callback, data) {
     var type;
     if(isPost) {
         type = "POST"
@@ -16,5 +16,10 @@ function httpRequest(url, isPost, callback) {
         }
       };
     http.open(type, url, true);
-    http.send();
+    if(data != undefined) {
+        http.send(data);
+    }
+    else {
+        http.send();
+    }
 };

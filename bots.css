@@ -33,7 +33,8 @@ body {
     font-weight: bold;
     line-height: 75px;
     font-size: 42px;
-    text-decoration: underline;
+    width: 100%;
+    /* text-decoration: underline; */
 }
 
 #content {
@@ -67,4 +68,35 @@ body {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+}
+
+.scriptOption {
+    height: 135px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 25px;
+    margin-bottom: 25px;
+}
+
+.scriptOption.red{
+    background-color: red;
+    color: white !important;
+}
+
+.scriptOption.blue{
+    background-color: lightblue;
+    color: black;
+}
+
+.scriptOption .headerText{
+    font-size: 60px;
+    text-decoration: initial;
+    text-align: center;
+    width: 100%;
+}
+
+.scriptOption .detailText {
+    text-align: center;
+    font-size: 24px;
 }

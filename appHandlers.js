@@ -5,7 +5,11 @@ function login() {
 }
 
 function selectGroup() {
-    print("SELECT")
+    _selectGroup();
+}
+
+function randomize() {
+    _randomize();
 }
 
 function _login() {
@@ -18,8 +22,16 @@ function _login() {
         _displayGroups();
     };
 
-    httpRequest('https://api.groupme.com/v3/groups?token=' + GMConsole.token, false, cb)
+    httpRequest('https://api.groupme.com/v3/groups?per_page=100&token=' + GMConsole.token, false, cb)
 };
+
+function _selectGroup() {
+    var index = document.querySelector("input[name='group']:checked").value;
+    var group = GMConsole.groups[index];
+    GMConsole.currentGroup = group;
+    document.getElementById("contentWrapper").innerHTML = document.getElementById("scriptSelector").innerHTML;
+    document.getElementById("groupName").innerHTML = group.name;
+}
 
 function _displayGroups(){
     document.getElementById("instruction").innerHTML = "Select which group you would like to operate within:";
