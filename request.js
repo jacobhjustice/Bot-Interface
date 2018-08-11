@@ -15,6 +15,9 @@ function httpRequest(url, isPost, callback, data) {
             }
         }
       };
+
+    //url = "https://cors.io/?" + url;
+
     http.open(type, url, true);
     if(data != undefined) {
         http.send(data);

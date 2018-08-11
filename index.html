@@ -10,7 +10,10 @@
     <script src = "bots.js"></script>
     <script src = "request.js"></script>
     <script src = "appHandlers.js"></script>
-
+    <script id = "onLoad">
+        attemptAutoLogin();
+        if
+    </script>
     <div id = "contentWrapper">
         <div class = "headerGroup">
             <div class = "headerText">Welcome to the Groupme Console</div>
@@ -23,7 +26,7 @@
         
     </div>
 
-    <script id = "scriptSelector">
+    <script id = "scriptSelector" type = "text/template">
         <div class = "headerGroup">
             <div class = "headerText">Groupme Console</div>
             <div class = "detailText">Select a script to run on <div id ="groupName"></div></div>
@@ -31,7 +34,7 @@
                 <div class = "headerText">Randomizer</div>
                 <div class = "detailText">Mix things up by swapping everyone's name in your group (will kick and readd everyone back)!</div>
             </div>
-            <div class = "scriptOption blue">
+            <!-- <div class = "scriptOption blue">
                 <div class = "headerText">Adder</div>
                 <div class = "detailText">Add 100 random users to your group!</div>
             </div>
@@ -42,7 +45,7 @@
             <div class = "scriptOption blue">
                 <div class = "headerText">Reset Muted</div>
                 <div class = "detailText">Kick and readd everyone with the group muted (resulting in it unmuted)!</div>
-            </div>
+            </div> -->
         </div>
     </script>
 </body>
